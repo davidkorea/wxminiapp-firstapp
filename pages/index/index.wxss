@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.nav_1 {
+  font-size:30px;
+  
+}

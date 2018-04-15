@@ -12,8 +12,11 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-<view class='conatiner'>
-<button class="userinfo">clickme</button>
-</view>
+  <view class='conatiner'>
+  <button bindtap='changemotto' class="userinfo" type='default'>change motto</button>
+  </view>
+
+<navigator url='../news/news' style='color:red' class='nav_1'>redirect to news page</navigator>
+<button bindtap='newspage' size='mini' type='primary'>redirect to news </button>
 </view>
 

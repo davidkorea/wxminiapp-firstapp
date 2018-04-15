@@ -9,6 +9,27 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+
+
+  newspage(){
+    console.log('go to news page')
+    wx.navigateTo({
+      url: '../news/news',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+
+  changemotto(){
+    console.log(this.data.motto)
+    this.setData({
+      motto:'welcome!!!'+Date.now()
+    });
+  },
+
+
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

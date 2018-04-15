@@ -1,0 +1,21 @@
+<text>this is news page</text>
+<view style='color:blue; margin-top:20px'>
+  <text bindtap='change'>{{msg}}</text>
+</view>
+<view class='box'>
+  <view class='item' wx:if='{{show}}'></view>
+  <button bindtap='hide' >change</button>
+</view>
+
+<view class='list'>
+  <view class='li' wx:for='{{arr}}' wx:key='{{index}}'>
+    {{index}} {{item}}
+    <!-- index，item自带变量 -->
+  </view>
+</view>
+
+<view>
+  <view class='li' wx:for='{{arrData}}' wx:key='{{index}}'>
+    {{item.name}} {{item.age}}
+  </view>
+</view>
